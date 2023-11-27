@@ -1,0 +1,60 @@
+a1ms3Master.c: In function ‘main’:
+a1ms3Master.c:23:12: warning: missing braces around initializer [-Wmissing-braces]
+     struct Appointment appoints[MAX_APPOINTMENTS] = { {0} };
+            ^
+a1ms3Master.c:23:12: warning: (near initialization for ‘appoints[0].date’) [-Wmissing-braces]
+clinic.c: In function ‘addAppointment’:
+clinic.c:628:90: warning: comparison between pointer and integer [enabled by default]
+         if (firstFreeIndexForAppointment == -1 && appointments[i].patients.patientNumber == NULL) { // executed only once
+                                                                                          ^
+clinic.c:554:9: warning: unused variable ‘maxDay’ [-Wunused-variable]
+     int maxDay;
+         ^
+clinic.c: In function ‘removeAppointment’:
+clinic.c:712:24: warning: missing braces around initializer [-Wmissing-braces]
+                 struct Appointment emptyAppointment = { 0 };
+                        ^
+clinic.c:712:24: warning: (near initialization for ‘emptyAppointment.date’) [-Wmissing-braces]
+clinic.c:669:9: warning: unused variable ‘firstFreeIndexForAppointment’ [-Wunused-variable]
+     int firstFreeIndexForAppointment = -1; // we will add appointments to the first free index
+         ^
+clinic.c:666:9: warning: unused variable ‘timeslotAvailable’ [-Wunused-variable]
+     int timeslotAvailable; // 1: timeslot available  / 0:
+         ^
+clinic.c:665:9: warning: unused variable ‘valid’ [-Wunused-variable]
+     int valid;  // 0: valid / 1: invalid
+         ^
+clinic.c:662:9: warning: unused variable ‘minute’ [-Wunused-variable]
+     int minute;
+         ^
+clinic.c:661:9: warning: unused variable ‘hour’ [-Wunused-variable]
+     int hour;
+         ^
+clinic.c:659:9: warning: unused variable ‘maxDay’ [-Wunused-variable]
+     int maxDay;
+         ^
+clinic.c: In function ‘importPatients’:
+clinic.c:933:25: warning: passing argument 1 of ‘strcpy’ from incompatible pointer type [enabled by default]
+                         strcpy(&patients[i].name, token);
+                         ^
+In file included from clinic.c:17:0:
+/usr/include/string.h:125:14: note: expected ‘char * __restrict__’ but argument is of type ‘char (*)[16]’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^
+clinic.c:936:25: warning: passing argument 1 of ‘strcpy’ from incompatible pointer type [enabled by default]
+                         strcpy(&patients[i].phone.description, token);
+                         ^
+In file included from clinic.c:17:0:
+/usr/include/string.h:125:14: note: expected ‘char * __restrict__’ but argument is of type ‘char (*)[5]’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^
+clinic.c:939:25: warning: passing argument 1 of ‘strcpy’ from incompatible pointer type [enabled by default]
+                         strcpy(&patients[i].phone.number, token);
+                         ^
+In file included from clinic.c:17:0:
+/usr/include/string.h:125:14: note: expected ‘char * __restrict__’ but argument is of type ‘char (*)[11]’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^
+clinic.c:898:10: warning: unused variable ‘token’ [-Wunused-variable]
+     char token[99] = ""; // We will break the line in the pipe character. 
+          ^

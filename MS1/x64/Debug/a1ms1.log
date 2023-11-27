@@ -1,0 +1,7 @@
+﻿a1ms1.obj : error LNK2019: unresolved external symbol inputInt referenced in function test01_inputInt
+a1ms1.obj : error LNK2019: unresolved external symbol inputIntPositive referenced in function test02_inputIntPositive
+a1ms1.obj : error LNK2019: unresolved external symbol inputIntRange referenced in function test03_inputIntRange
+a1ms1.obj : error LNK2019: unresolved external symbol inputCharOption referenced in function test05_inputCharOption
+a1ms1.obj : error LNK2019: unresolved external symbol inputCString referenced in function test06_inputCString
+a1ms1.obj : error LNK2019: unresolved external symbol displayFormattedPhone referenced in function test09_displayPhone
+C:\Users\BrunoPC\OneDrive\Documents\Seneca\IPC\IPC-Project-master\A1\MS1\x64\Debug\a1ms1.exe : fatal error LNK1120: 6 unresolved externals

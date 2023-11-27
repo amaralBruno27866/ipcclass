@@ -1,0 +1,8 @@
+﻿  a1ms3.c
+  clinic.c
+  core.c
+C:\Users\balen\OneDrive\Documents\Seneca\IPC\IPC-Project-master\A1\MS3\core.c(105,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balen\OneDrive\Documents\Seneca\IPC\IPC-Project-master\A1\MS3\core.c(180,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  LINK : C:\Users\balen\OneDrive\Documents\Seneca\IPC\IPC-Project-master\A1\MS3\x64\Debug\a1ms3.exe not found or not built by the last incremental link; performing full link
+  a1ms3.vcxproj -> C:\Users\balen\OneDrive\Documents\Seneca\IPC\IPC-Project-master\A1\MS3\x64\Debug\a1ms3.exe

@@ -1,0 +1,46 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #8
+Full Name  : Bruno Amaral
+Student ID#: 143766228
+Email      : bamaral2@myseneca.ca
+Section    : ZFF 
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. Several helper functions were designed to return values in two different ways (via an argument and/or by return). Explain at least one benefit of this 
+“feature” and how it increases usability/flexibility and at least one negative reason why having functions designed to work in this way may not be desirable.
+    The purpose of this is to make the code more malleable, giving the user freedom to choose what is best for him.
+
+    At the other end, you make the code more complex to maintain and understand because there are several paths that reach the same result.
+
+2. According to the design principles for structured design, functions should be highly cohesive and have low coupling. Identify one function in the workshop
+that demonstrates less than perfect cohesion, and one function that demonstrates coupling that could be improved. For each identified function, briefly 
+explain what you would do to improve them.
+
+    The "getCatFoodInfo" function is not cohesive as it both collects user input for the SKU, price, weight, and calories of a cat food product and 
+    validates the input for each field. To improve cohesion, we can split the input collection and validation into different functions. For instance, we 
+    can create a "getPositiveInt" function to handle input collection and validation for positive integers and another function called "getPositiveDouble" 
+    for positive double values. Then, the "getCatFoodInfo" function can call these helper functions to gather user input for each field.
+
+3. What advantages are there in passing structures to functions? Based on your readings this week (for next week’s topics) what could be done in the passing 
+of this data to functions to make it more efficient? Explain how the “displayCatfoodData” function could be improved.
+
+    There are various benefits to passing structures to functions, including improved code organization and better understanding of related data. By 
+    grouping related data together within a structure, it's easier to manage and keep track of. Passing a structure as a single parameter also reduces the 
+    number of function arguments, which can make the code more efficient. Additionally, functions that operate on structures can be reused with different 
+    instances of the structure, making the code more modular and reusable.
+
+    In order to improve the efficiency of data transfer, there are a few strategies that can be employed. Firstly, instead of passing structures by value, 
+    it's recommended to pass them by reference to avoid unnecessary copying of the entire structure. Additionally, if the structure is not going to be 
+    modified within the function, it's best to pass it as a const reference to ensure immutability and avoid unnecessary copying. Lastly, to further 
+    minimize copying and improve efficiency, it's best to only pass the required fields of the structure to the function instead of the entire structure.
+
+    To improve the "displayCatfoodData" function, it is recommended to pass the catFoodData structure by reference instead of by value. This will prevent 
+    unnecessary copying. If the catFoodData structure is not being modified within the function, it is also advised to pass it as a const reference to 
+    ensure immutability. Additionally, it is worth considering passing only the required fields instead of the entire catFoodData structure to minimize 
+    unnecessary copying and improve efficiency.

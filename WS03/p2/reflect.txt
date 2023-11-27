@@ -1,0 +1,67 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #3 (P2)
+Full Name  : Bruno Alencar Amaral
+Student ID#: 143766228
+Email      : bamaral2@myseneca.ca
+Section    : ZFF
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. Determining the customer preference based on the number of servings to the available coffee bag weights required 
+   a more complex logical expression. Copy your submitted code for only this part of the logic, and explain the following:
+
+   for (int i = 0; i < 1; i++) {
+        printf(" 1|       %d         |      %d      |   %d   |\n"
+            , preferences[i].coffeeStrength == 'L' || preferences[i].coffeeStrength == 'M' || preferences[i].coffeeStrength == 'R'
+            , preferences[i].dailyServings == 2
+            , preferences[i].creamWithCoffee == 'Y'
+        );
+    }
+
+    A) How many relational expressions did you use and identify each of them.
+        I used 8 relational expressions
+        int i = 0
+        i < 1
+        i++
+        preferences[i].coffeeStrength == 'L'
+        preferences[i].coffeeStrength == 'M'
+        preferences[i].coffeeStrength == 'R'
+        preferences[i].dailyServings == 2
+        preferences[i].creamWithCoffee == 'Y'
+
+    B) How many logical expressions did you use and identify each of them.
+        I used 2 logical expression
+        LOGICAL =  preferences[i].coffeeStrength == 'L' || preferences[i].coffeeStrength == 'M' || preferences[i].coffeeStrength == 'R'
+
+2. Referring to Part-1 output #9, show how that logic can be coded in TWO correct ways, one applying DeMorgan’s Law and
+   the other way not using DeMorgan’s Law. Also, identify what method you used in your submitted answer for Part-1.
+
+   ->Using DeMorgan’s
+    !(product3 == product1 || product3 == product2 || product2 == product1)
+
+   ->Not using DeMorgan’s
+    product3 != product1 && product3 != product2 && product2 != product1
+
+    In my code I used the second option.
+
+3. Using the variables you used in Part-2, demonstrate two ways you can organize them, so it is optimized for easy to 
+   maintain code and contributes towards clarity in how data is stored in the program.
+
+        // Put together all the same type of variables
+           char type1, type2, type3, coffeeStrength, cream1, cream2, cream3, creamWithCoffee;
+           int weight1, weight2, weight3;
+
+        // Gather all variables for each code snippet
+           -> Part B and C
+              char type1, type2, type3;
+              char cream1, cream2, cream3;
+              int weight1, weight2, weight3;
+
+           -> Part D, E, and F
+              char coffeeStrength, creamWithCoffee;
+              int dailyServings;

@@ -1,0 +1,26 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #6
+Full Name  : Bruno Amaral
+Student ID#: 143766228
+Email      : bamaral2@myseneca.ca
+Section    : ZFF
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. Why are there three types of iteration constructs if we can make any one of them behave the same way? Refer to your code in this workshop 
+to help backup your answer (do NOT include the code in your answer). 
+Typically, when working with arrays, there is one iteration construct we favour – what is it and explain why it is more preferred over the 
+other options.
+	-> When you're dealing with arrays, one of the best tools in your toolbox is the good old "for" loop. It's super easy to use and helps you go through all the elements in just one line of code. Plus, you can even use it to go backward or take specific steps, which is pretty cool. But remember, there are other loops out there, like "while" and "do-while", that might be better for different situations.
+
+2. Describe what you did to both test and debug your program. How did you go about finding where the problems were located (explain how you did this for both syntactic and semantic problems)?
+	-> Whenever errors occur, which is inevitable, I utilize a printf function that incorporates the variables responsible for the issue to identify the problem in terms of semantics and syntax. Additionally, the Visual Studio debugger presents the error precisely by indicating the line, column, and nature of the issue, making locating and fixing the error simple.
+
+3. When attempting to submit your work, you receive the following error feedback from the submitter:
+Using the above explicit information, explain each step you must take to successfully identify and fix your error.
+	-> The prompt displayed an image that indicated that the error was located on line 6 and provided a comparison between the expected and actual code. Additionally, it shared the ASCII codes of the characters to assist in identifying the mistake. Afterward, the system generated a file named "output.txt" that described the error and another file named "name_codigo_master_output.txt" that contained the generated output of the code. To resolve the error, all that's left is to open the code in a text editor or Visual Studio, apply the necessary corrections, test it again, and submit it once more.
